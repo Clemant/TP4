@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/cardview_dark_background"
+    app:strokeColor="@color/cardview_dark_background"
+    app:strokeWidth="1.2dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/street_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                tools:text="@tools:sample/full_names"
+                app:layout_constraintTop_toTopOf="@+id/constrain"
+                app:layout_constraintLeft_toLeftOf="@+id/constrain"
+                />
+
+            <TextView
+                android:id="@+id/street_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                tools:text="@tools:sample/cities"
+                app:layout_constraintTop_toBottomOf="@+id/street_name"
+                app:layout_constraintLeft_toLeftOf="@+id/street_name" />
+
+            <TextView
+            android:id="@+id/full_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:text="@tools:sample/cities"
+            app:layout_constraintTop_toBottomOf="@+id/street_address"
+            app:layout_constraintLeft_toLeftOf="@+id/street_address" />
+
+            <TextView
+                android:id="@+id/secondary_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="@tools:sample/cities"
+                app:layout_constraintTop_toBottomOf="@+id/full_address"
+                app:layout_constraintLeft_toLeftOf="@+id/full_address" />
+
+            <TextView
+                android:id="@+id/time_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="@tools:sample/cities"
+                app:layout_constraintTop_toBottomOf="@+id/secondary_address"
+                app:layout_constraintLeft_toLeftOf="@+id/secondary_address" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            tools:text="@tools:sample/cities"
+            app:layout_constraintTop_toBottomOf="@+id/constrain"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/lat_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            tools:text="@tools:sample/cities"
+            app:layout_constraintTop_toBottomOf="@+id/country"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
