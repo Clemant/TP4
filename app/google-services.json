@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "709085184030",
+    "project_id": "tpfour-93fd2",
+    "storage_bucket": "tpfour-93fd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709085184030:android:ba1c91addc064a128cae0f",
+        "android_client_info": {
+          "package_name": "com.capou.tp4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709085184030-ia884udk9dbk1r5vb9f1kp5pi91psobd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe_z2UOORsmAIUDTBoo7xqTigcr07o0XE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709085184030-ia884udk9dbk1r5vb9f1kp5pi91psobd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
